@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/darksecond/Documents'
 let g:netrw_dirhist_2='/home/darksecond/build/virt-web'
 let g:netrw_dirhist_3='/home/darksecond/build/scrabble'
 let g:netrw_dirhist_4='/home/darksecond/linux/linux-2.6/fs/btrfs'
+let g:netrw_dirhist_5='/home/darksecond'
+let g:netrw_dirhist_6='/home/darksecond/linux/linux-2.6'
