@@ -3,6 +3,9 @@ set nocompatible	"disable vi compatebility
 "automaticly reload .vimrc when changed
 autocmd bufwritepost .vimrc source $MYVIMRC
 
+"MOUSE
+set mouse=a		"enable mouse
+
 "FILETYPE DETECTION
 filetype on
 filetype plugin on
