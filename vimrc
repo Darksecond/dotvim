@@ -26,4 +26,4 @@ set autoindent		"auto indentation
 set smartindent		"smart indentation
 
 "MAPPINGS
-nmap  <Leader>t :NERDTreeToggle<CR>
+nmap  <Leader>y :NERDTreeToggle<CR>
