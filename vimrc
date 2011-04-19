@@ -17,6 +17,7 @@ set ruler		"cursor position lower right
 set laststatus=2	"status line on line 2 (bottom-up)
 set title		"show title in console title
 set background=dark	"adapt colorscheme for dark background
+set listchars=tab:▸\ ,eol:¬	"use nicer characters for tab and EOL spaces
 
 "BUFFERS/DIRS
 set hidden		"Handle multiple buffers better
@@ -40,5 +41,6 @@ inoremap jj <Esc>	"map jj to escape
 
 "MAPPINGS
 nmap  <Leader>y :NERDTreeToggle<CR>
+nmap <leader>l :set list!<CR>	"mapping to shower hidden characters
 "map <right> <ESC>:bn<RETURN>
 "map <left> <ESC>:bp<RETURN>
