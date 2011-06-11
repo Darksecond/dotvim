@@ -21,7 +21,7 @@ set listchars=tab:▸\ ,eol:¬	"use nicer characters for tab and EOL spaces
 
 "BUFFERS/DIRS
 set hidden		"Handle multiple buffers better
-set autochdir		"auto change directory
+"set autochdir		"auto change directory
 
 "SEARCHING
 set incsearch		"search while typing
