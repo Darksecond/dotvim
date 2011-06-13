@@ -3,6 +3,10 @@ set nocompatible	"disable vi compatebility
 "automaticly reload .vimrc when changed
 autocmd bufwritepost .vimrc source $MYVIMRC
 
+"PATHOGEN
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "MOUSE
 set mouse=a		"enable mouse
 
