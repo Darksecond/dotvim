@@ -21,6 +21,18 @@ set ruler		"cursor position lower right
 set laststatus=2	"status line on line 2 (bottom-up)
 set title		"show title in console title
 set background=dark	"adapt colorscheme for dark background
+
+"THEME
+let g:molokai_original = 1
+colorscheme  molokai
+
+"GUI ONLY
+if has("gui_running")
+	set guioptions-=T
+	set guioptions-=m
+	set lines=60	
+endif
+
 set listchars=tab:▸\ ,eol:¬	"use nicer characters for tab and EOL spaces
 
 "BUFFERS/DIRS
