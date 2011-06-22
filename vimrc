@@ -30,6 +30,7 @@ colorscheme  molokai
 if has("gui_running")
 	set guioptions-=T
 	set guioptions-=m
+	set guioptions-=r
 	set lines=60	
 endif
 
