@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/darksecond/build/ein4e-sem4/Systeem Software/4.3/src'
 let g:netrw_dirhist_2='/home/darksecond/build/shell/src'
 let g:netrw_dirhist_3='/Users/darksecond/build/front'
+let g:netrw_dirhist_4='/Users/darksecond/build/ein4e-sem4/Systeem Software/4.3/src/New'
+let g:netrw_dirhist_5='/Users/darksecond/build/rendementserver'
+let g:netrw_dirhist_6='/Users/darksecond/build/rendementserver/app'
+let g:netrw_dirhist_7='/Users/darksecond/build/rendementserver'

@@ -61,3 +61,5 @@ nmap  <Leader>y :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>	"mapping to shower hidden characters
 "map <right> <ESC>:bn<RETURN>
 "map <left> <ESC>:bp<RETURN>
+
+let g:ctrlp_map = '<leader>t'
