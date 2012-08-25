@@ -28,6 +28,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "LOOKS
+syntax enable
 set number		"line numbers
 set ruler		"cursor position lower right
 set laststatus=2	"status line on line 2 (bottom-up)
@@ -35,7 +36,6 @@ set title		"show title in console title
 set background=dark	"adapt colorscheme for dark background
 
 "THEME
-syntax enable
 "let g:molokai_original = 1
 "colorscheme molokai
 colorscheme solarized
