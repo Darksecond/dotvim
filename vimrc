@@ -14,6 +14,18 @@ set mouse=a		"enable mouse
 filetype on
 filetype plugin on
 filetype indent on
+"add *.mobile.erb to syntax highlighting detection
+"this makes mobile erb files have syntax highlighting
+autocmd BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
+autocmd BufNewFile,BufRead *.mobile.erb set filetype=eruby
+let NERDTreeIgnore = ['\.aux$']
+
+"COMPLETION
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "LOOKS
 set number		"line numbers
@@ -34,7 +46,7 @@ if has("gui_running")
 	set lines=60	
 endif
 
-set listchars=tab:▸\ ,eol:¬	"use nicer characters for tab and EOL spaces
+set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces
 
 "BUFFERS/DIRS
 set hidden		"Handle multiple buffers better
