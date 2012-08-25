@@ -35,8 +35,11 @@ set title		"show title in console title
 set background=dark	"adapt colorscheme for dark background
 
 "THEME
-let g:molokai_original = 1
-colorscheme  molokai
+syntax enable
+"let g:molokai_original = 1
+"colorscheme molokai
+colorscheme solarized
+call togglebg#map("<F5>")
 
 "GUI ONLY
 if has("gui_running")
