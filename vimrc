@@ -34,6 +34,7 @@ set ruler		"cursor position lower right
 set laststatus=2	"status line on line 2 (bottom-up)
 set title		"show title in console title
 set background=dark	"adapt colorscheme for dark background
+set rnu			"enable relative line numbers
 
 "THEME
 "let g:molokai_original = 1
@@ -47,6 +48,7 @@ if has("gui_running")
 	set guioptions-=m
 	set guioptions-=r
 	set lines=60	
+	set guifont=Monaco:h11
 endif
 
 set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces
@@ -74,7 +76,12 @@ inoremap jj <Esc>	"map jj to escape
 "MAPPINGS
 nmap  <Leader>y :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>	"mapping to shower hidden characters
-"map <right> <ESC>:bn<RETURN>
-"map <left> <ESC>:bp<RETURN>
+
+"disable or remap the cursor keys
+"but only in normal mode
+nmap <right> <ESC>:bn<RETURN>
+nmap <left> <ESC>:bp<RETURN>
+nmap <up> <nop>
+nmap <down> <nop>
 
 let g:ctrlp_map = '<leader>t'

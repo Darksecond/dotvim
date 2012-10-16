@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/darksecond/build/ltx'
 let g:netrw_dirhist_2='/Users/darksecond/build/scouting/amber'
 let g:netrw_dirhist_3='/Users/darksecond/build/linkage/src'
 let g:netrw_dirhist_4='/Users/darksecond/build/scouting/amber'
+let g:netrw_dirhist_5='/Users/darksecond'
+let g:netrw_dirhist_6='/Users/darksecond/build/Amber/app/models'
+let g:netrw_dirhist_7='/Users/darksecond/build/Amber'
