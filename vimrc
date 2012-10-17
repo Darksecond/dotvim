@@ -29,12 +29,18 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "LOOKS
 syntax enable
-set number		"line numbers
-set ruler		"cursor position lower right
-set laststatus=2	"status line on line 2 (bottom-up)
-set title		"show title in console title
-set background=dark	"adapt colorscheme for dark background
-set rnu			"enable relative line numbers
+"set number		 "line numbers
+set rnu			 "relative line numbers
+set ruler		 "cursor position lower right
+set laststatus=2	 "status line on line 2 (bottom-up)
+set title		 "show title in console title
+set background=dark	 "adapt colorscheme for dark background
+
+"AUTOSWITCH
+"automatically switch line numbers from absolute to relative, depending on the
+"mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
 
 "THEME
 "let g:molokai_original = 1
