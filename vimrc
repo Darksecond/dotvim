@@ -19,6 +19,7 @@ filetype indent on
 autocmd BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
 autocmd BufNewFile,BufRead *.mobile.erb set filetype=eruby
 let NERDTreeIgnore = ['\.aux$']
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 "COMPLETION
 set omnifunc=syntaxcomplete#Complete
@@ -43,8 +44,6 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
 "THEME
-"let g:molokai_original = 1
-"colorscheme molokai
 colorscheme solarized
 call togglebg#map("<F5>")
 
@@ -58,6 +57,10 @@ if has("gui_running")
 endif
 
 set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces
+
+"SPELLING
+set spelllang=en,nl
+map <Leader>ss :setlocal spell!<cr>
 
 "BUFFERS/DIRS
 set hidden		"Handle multiple buffers better
