@@ -18,7 +18,9 @@ filetype indent on
 "this makes mobile erb files have syntax highlighting
 autocmd BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
 autocmd BufNewFile,BufRead *.mobile.erb set filetype=eruby
-let NERDTreeIgnore = ['\.aux$']
+"set filetype to ruby for these files
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,config.ru,*.rake} set ft=ruby
+let NERDTreeIgnore = ['\.aux$', '\~$']
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 "COMPLETION
