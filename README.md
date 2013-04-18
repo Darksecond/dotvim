@@ -7,7 +7,7 @@ Installation
 ------------
 
 1. git clone git@github.com:Darksecond/dotvim.git
-2. mv dotvim .vimrc
+2. mv dotvim .vim
 3. ln -s ~/.vim/vimrc ~/.vimrc
 4. go into .vim directory
 5. git submodule init
