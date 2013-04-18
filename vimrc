@@ -38,6 +38,7 @@ set ruler		 "cursor position lower right
 set laststatus=2	 "status line on line 2 (bottom-up)
 set title		 "show title in console title
 set background=dark	 "adapt colorscheme for dark background
+set cc=80                "vertical line at 80 characters
 
 "AUTOSWITCH
 "automatically switch line numbers from absolute to relative, depending on the
@@ -56,6 +57,7 @@ if has("gui_running")
 	set guioptions-=r
 	set lines=60	
 	set guifont=Monaco:h11
+	set gcr=a:blinkon0
 endif
 
 set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces

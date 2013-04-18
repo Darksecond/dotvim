@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/darksecond/build/wsn'
-let g:netrw_dirhist_2='/Users/darksecond/build/wsn/build'
-let g:netrw_dirhist_3='/Users/darksecond/build/Amber'
-let g:netrw_dirhist_4='/Users/darksecond/build/wsn/src'
-let g:netrw_dirhist_5='/Users/darksecond/build/Amber'
-let g:netrw_dirhist_6='/Users/darksecond/build/wsn'
-let g:netrw_dirhist_7='/Users/darksecond/build/wsn/build'
