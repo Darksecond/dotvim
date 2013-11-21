@@ -23,6 +23,9 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,config.ru,
 let NERDTreeIgnore = ['\.aux$', '\~$']
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
+"set ruby tab settings, tabspot=2, shiftwidth=2, expandtabs
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+
 "COMPLETION
 set omnifunc=syntaxcomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
