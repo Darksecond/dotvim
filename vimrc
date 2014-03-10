@@ -95,8 +95,8 @@ nmap <leader>l :set list!<CR>	"mapping to shower hidden characters
 
 "disable or remap the cursor keys
 "but only in normal mode
-nmap <right> <ESC>:bn<RETURN>
-nmap <left> <ESC>:bp<RETURN>
+nmap <right> :bn<RETURN>
+nmap <left> :bp<RETURN>
 nmap <up> <nop>
 nmap <down> <nop>
 
