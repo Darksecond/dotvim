@@ -1,2 +1,4 @@
 tmux-*.log
 .netrwhist
+.VimballRecord
+bundle

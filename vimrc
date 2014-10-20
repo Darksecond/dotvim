@@ -1,56 +1,50 @@
-"BASE
-set nocompatible	"disable vi compatebility
-"automaticly reload .vimrc when changed
-autocmd bufwritepost .vimrc source $MYVIMRC
+set nocompatible
+filetype off
 
-"PATHOGEN
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+
+call vundle#end()
+
+"FILETYPE DETECTION
+filetype plugin indent on
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype eruby setlocal ts=2 sw=2 expandtab
+
+"NERDTREE IGNORES
+let NERDTreeIgnore = ['\.aux$', '\~$']
 
 "MOUSE
 set mouse=a		"enable mouse
 
-"FILETYPE DETECTION
-filetype on
-filetype plugin on
-filetype indent on
-"add *.mobile.erb to syntax highlighting detection
-"this makes mobile erb files have syntax highlighting
-autocmd BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
-autocmd BufNewFile,BufRead *.mobile.erb set filetype=eruby
-"set filetype to ruby for these files
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,config.ru,*.rake} set ft=ruby
-let NERDTreeIgnore = ['\.aux$', '\~$']
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
-"set ruby tab settings, tabspot=2, shiftwidth=2, expandtabs
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-
 "COMPLETION
 set omnifunc=syntaxcomplete#Complete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "LOOKS
 syntax enable
-"set number		 "line numbers
-set rnu			 "relative line numbers
-set ruler		 "cursor position lower right
-set laststatus=2	 "status line on line 2 (bottom-up)
-set title		 "show title in console title
-set background=dark	 "adapt colorscheme for dark background
-set cc=80                "vertical line at 80 characters
+set rnu
+set nu
+set ruler
+set laststatus=2
+set title
+set background=dark
+set cc=80
 
-"use special powerline fonts
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
-"AUTOSWITCH
-"automatically switch line numbers from absolute to relative, depending on the
-"mode
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
+set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces
 
 "THEME
 colorscheme solarized
@@ -62,29 +56,16 @@ if has("gui_running")
 	set guioptions-=m
 	set guioptions-=r
 	set lines=60	
-	"set guifont=Monaco:h11
 	set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 	set gcr=a:blinkon0
 endif
 
-set listchars=tab:▸\ ,eol:¬,trail:·	"use nicer characters for tab and EOL spaces
-
-"SPELLING
-set spelllang=en,nl
-map <Leader>ss :setlocal spell!<cr>
-
 "BUFFERS/DIRS
 set hidden		"Handle multiple buffers better
-"set autochdir		"auto change directory
 
 "SEARCHING
 set incsearch		"search while typing
 set hlsearch		"make # work
-
-"FOLDING
-set foldmethod=syntax
-"set foldcolumn=1
-set foldlevel=999999	"start unfolded
 
 "INDENTATION
 set autoindent		"auto indentation
@@ -95,10 +76,10 @@ inoremap jj <Esc>	"map jj to escape
 
 "MAPPINGS
 nmap  <Leader>y :NERDTreeToggle<CR>
-nmap <leader>l :set list!<CR>	"mapping to shower hidden characters
+nmap <leader>l :set list!<CR>	"mapping to show hidden characters
 
 "disable or remap the cursor keys
-"but only in normal mode
+""but only in normal mode
 nmap <right> :bn<RETURN>
 nmap <left> :bp<RETURN>
 nmap <up> <nop>
