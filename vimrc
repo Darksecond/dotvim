@@ -43,6 +43,9 @@ set title		 "show title in console title
 set background=dark	 "adapt colorscheme for dark background
 set cc=80                "vertical line at 80 characters
 
+"use special powerline fonts
+let g:airline_powerline_fonts = 1
+
 "AUTOSWITCH
 "automatically switch line numbers from absolute to relative, depending on the
 "mode
@@ -59,7 +62,8 @@ if has("gui_running")
 	set guioptions-=m
 	set guioptions-=r
 	set lines=60	
-	set guifont=Monaco:h11
+	"set guifont=Monaco:h11
+	set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 	set gcr=a:blinkon0
 endif
 
