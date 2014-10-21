@@ -70,6 +70,8 @@ set hidden		"Handle multiple buffers better
 "SEARCHING
 set incsearch		"search while typing
 set hlsearch		"make # work
+set ignorecase          "ignore case
+set smartcase           "except when there is a capital letter
 
 "INDENTATION
 set autoindent		"auto indentation
