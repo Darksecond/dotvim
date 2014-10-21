@@ -63,7 +63,7 @@ if has("gui_running")
 	set guioptions-=T
 	set guioptions-=m
 	set guioptions-=r
-	set lines=60	
+	set lines=60
 	set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
 	set gcr=a:blinkon0
 endif
