@@ -35,6 +35,9 @@ set mouse=a		"enable mouse
 "COMPLETION
 set omnifunc=syntaxcomplete#Complete
 
+"KEY DELAYS
+set ttimeoutlen=0 timeoutlen=1000
+
 "LOOKS
 syntax enable
 set rnu
@@ -44,6 +47,7 @@ set laststatus=2
 set title
 set background=dark
 set cc=80
+set noshowmode
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
