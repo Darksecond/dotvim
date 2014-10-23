@@ -25,6 +25,7 @@ call vundle#end()
 filetype plugin indent on
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype eruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 
 "NERDTREE IGNORES
 let NERDTreeIgnore = ['\.aux$', '\~$']
