@@ -19,6 +19,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'fatih/vim-go'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'nono/vim-handlebars'
 
 call vundle#end()
 
