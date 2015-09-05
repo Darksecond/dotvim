@@ -68,7 +68,8 @@ if has("gui_running")
 	set guioptions-=m
 	set guioptions-=r
 	set lines=60
-	set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+	"set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h11
+	set guifont=Sauce\ Code\ Powerline:h12
 	set gcr=a:blinkon0
 endif
 
